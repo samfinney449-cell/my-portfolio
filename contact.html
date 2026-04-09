@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Sam Ochieng — Computing and Agribusiness student at Jomo Kenyatta University of Agriculture and Technology">
+  <title>Sam Ochieng | Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">Sam Ochieng</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="contact-section">
+      <div class="container">
+        <h2>Get In Touch</h2>
+        <p>Currently seeking opportunities to apply my Python and IoT development skills. Whether you have a question about my projects or a potential collaboration, feel free to reach out!</p>
+        
+        <form class="contact-form" action="#" method="POST" novalidate>
+
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Your Name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" 
+                   placeholder="yourname@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="">Select a subject</option>
+              <option>Collaboration</option>
+              <option>Internship Opportunity</option>
+              <option>IoT / Project Inquiry</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="msg">Message</label>
+            <textarea id="msg" name="message" rows="5" 
+                      placeholder="How can I help you?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> Sam Ochieng — Dept. of Agricultural and Resource Economics</p>
+    </div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
